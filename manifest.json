@@ -1,0 +1,17 @@
+{
+    "name": "HTML Regex Checker",
+    "description": "HTML Regex Checker",
+    "version": "1.1",
+    "browser_action": {
+        "default_popup": "bg.html",
+        "default_icon": "v.png"
+    },
+    "icons": { "16": "v.png",
+           "48": "v.png",
+          "128": "v.png" },
+    "background": {
+        "scripts": ["background.js"]
+    }, 
+    "permissions": ["activeTab"],
+    "manifest_version": 2
+}

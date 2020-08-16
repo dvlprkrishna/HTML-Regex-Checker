@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<style>
+		body {
+			min-width: 600px;
+			background-color: rgba(252, 252, 252, 0.918);
+		}
+		.legend-wrap {
+			max-width: 320px;
+			margin: .5rem auto;
+			font-size: .9rem;
+			letter-spacing: .5px;
+		}
+		.box {
+			background-color: transparent;
+			max-width: 1.5rem!important;
+			max-height: 1.5rem!important;
+		}
+		.mini-box {
+			background-color: transparent;
+			max-width: 1rem!important;
+			max-height: 1rem!important;
+		}
+		.table td {
+			border-top: 2px solid #e4e9ef!important;
+		}
+		.chkpass {
+			background-color: dodgerblue;
+		}
+		.chkfail {
+			background-color: red;
+		}
+		.chkreview {
+			background-color: wheat;
+		}
+	</style>
+    <title>Check Regex in HTML</title>
+  </head>
+  <body class="p-2">
+	<div class="result-wrap">
+		<div>
+			<h6 class="text-center mt-2">HTML Regex Validator</h6>
+			<hr style="max-width: 30%;border: 1px solid wheat; margin: .5rem auto 1rem;">
+		</div>
+		<table class="table table-sm">
+			<thead>
+								 
+			</thead>
+			<tbody>
+			<!-- Title Tag Check -->				 
+			  <tr id="titleCheck">
+				<td>Alt Tag</td>
+				<td>Alt Tag</td>
+				<td><span class="mini-box chkpass">&nbsp;</span> Passed</td> 
+			  </tr>
+			  <tr>
+				<td colspan="3"><small style="font-size: .8rem;" id="titleCheckDesc"></small></td>
+			  </tr>
+			   
+			</tbody>
+		  </table>
+	</div>
+    <div class="legend-wrap d-flex flex-row justify-content-between">
+		<div class="d-flex flex-row align-items-baseline">
+			<div class="box chkpass m-1 px-2 primary">&nbsp;</div>
+			<div>Passed</div>
+		</div>
+		<div class="d-flex flex-row align-items-baseline">
+			<div class="box chkreview m-1 px-2 primary">&nbsp;</div>
+			<div>Need Reviewing</div>
+		</div>
+		<div class="d-flex flex-row align-items-baseline">
+			<div class="box chkfail m-1 px-2 primary">&nbsp;</div>
+			<div>Failed</div>
+		</div>
+		
+	</div>
+	<span><small><i><a class="text-decoration-none text-muted" href="https://dvlpr.in/">v2.0</a></i></small></span> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="background.js"></script>
+  </body>
+</html>
